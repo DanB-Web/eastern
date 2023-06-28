@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Font families */
+@layer base {
+  @font-face {
+    font-family: Frutiger;
+    font-weight: 400;
+    font-style: normal;
+    src: url(./fonts/frutiger.ttf);
+  }
+  @font-face {
+    font-family: Frutiger;
+    font-weight: 600;
+    font-style: normal;
+    src: url(./fonts/frutiger_bold.ttf);
+  }
+  @font-face {
+    font-family: Frutiger;
+    font-weight: 400;
+    font-style: italic;
+    src: url(./fonts/frutiger_italic.ttf);
+  }
+}
+
+/* Common styles */
+.test-border {
+    @apply border-2 border-red-500;
+}
+
+.title-header {
+    @apply bg-colorPrimary p-4;
+}
+
+.title-header h1 {
+    @apply text-center text-3xl text-white;
+}
+
+.main-header {
+    @apply bg-colorSecondary px-4 py-2;
+}
+
+.main-header h2 {
+    @apply text-center text-2xl text-white;
+}
+
+.sub-header {
+  @apply bg-white p-4;
+}
+
+.sub-header h2 {
+   @apply text-center text-2xl text-white p-2 bg-colorPrimary;
+}
+
+.calc-btn {
+  @apply text-center text-2xl text-white p-2 bg-red-500 rounded w-40;
+}
+
+.index-links svg {
+    color: grey;
+    transform: scale(1.2);
+}
+
+.title-header svg {
+  color: #fff;
+  transform: scale(1.4);
+}
+
+
+/* Label styles */
+.label {
+  height: 8rem;
+  position: relative;
+}
+
+.label svg {
+  transform: scale(3);
+  position: absolute;
+  top: 25px;
+  left: 50%;
+}
+
+.label p {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.info-label svg {
+  color: #39668a;
+}
+
+.warning-label svg, 
+.danger-label svg {
+  color: #fff;
+}
+
+/* Utility image/fglowchart/video etc title */
+.information {
+  margin: 1.4rem;
+  font-size: 1.2rem;
+}
+
+/* Form styles */
+input {
+  border: 1px solid gray;
+  padding: 4px;
+}
+
+/* Flowchart styles */
+.flowchart img {
+  height: 250px;
+  width: 600px;
+}
+
+
+/* Table styles */
+table thead {
+  background-color: darkgray;
+
+}
+
+td, th {
+  text-align: center;
+  padding: 0.4rem;
+  border: 1px solid black;
+}
+
